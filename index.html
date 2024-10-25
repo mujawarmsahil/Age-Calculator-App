@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <title>Frontend Mentor | Age calculator app</title>
+    </head>
+
+    <body>
+
+      <section id="ageContainer">
+
+        <div class="ageContainer">
+
+          <form action="" id="formWrapper">
+            
+            <div class="dayContainer">
+              
+              <label for="dayInput" id="dayLabel">Day</label>
+              
+              <input type="number" name="dayInput" id="dayInput" placeholder="DD" min="1" max="31">
+
+              <p class="errMessage"></p>
+            
+            </div>
+
+            <div class="monthContainer">
+              
+              <label for="monthInput" id="monthLabel">Month</label>
+              
+              <input type="number" name="monthInput" id="monthInput" placeholder="MM" min="1" max="12">
+
+              <p class="errMessage"></p>
+
+            </div>
+
+            <div class="yearContainer">
+              
+              <label for="yearInput" id="yearLabel">Year</label>
+              
+              <input type="number" name="yearInput" id="yearInput" placeholder="YYYY" min="1800" >
+
+              <p class="errMessage"></p>
+            
+            </div>
+            
+            <button type="submit" id="calcAgeBtn"><img src="./assets/images/icon-arrow.svg" alt="arrow svg"></button>
+          
+          </form>
+
+          <section id="resultWrapper">
+
+            <section class="resultWrapper">
+
+              <div class="yearWrapper">
+
+                <p class="yearResult"><span id="yearSpan">- -</span> years</p>
+
+              </div>
+
+              <div class="monthWrapper">
+
+                <p class="monthResult"><span id="monthSpan">- -</span> months</p>
+
+              </div>
+
+              <div class="dayWrapper">
+
+                <p class="dayResult"><span id="daySpan">- -</span> days</p>
+
+              </div>
+
+            </section>
+
+          </section>
+
+        </div>
+
+      </section>
+
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
+  <!-- Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days -->
+      <script src="./assets/js/script.js"></script>
+    </body>
+</html>
